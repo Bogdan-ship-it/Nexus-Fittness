@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Fitness</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Banner sus -->
+  <header class="banner">
+    <h1>NEXUS FITNESS</h1>
+  </header>
 
+  <!-- Bara laterală stânga -->
+  <aside class="sidebar">
+    <button id="menuBtn">Meniu</button>
+    <button id="messagesBtn">Mesaje</button>
+    <button id="profileBtn">Profilul meu</button>
+    <button id="locationBtn">Locație</button>
+  </aside>
+
+  <!-- Conținut principal -->
+  <main class="content">
+    <h2 class="club-name">NEXUS FITNESS</h2>
+
+    <!-- Testimoniale -->
+    <section class="testimonials">
+      <div class="testimonial">
+        <p>★★★★★<br>Am obținut cele mai bune rezultate de când m-am alăturat Nexus Fitness!<br><strong>Andrei</strong></p>
+      </div>
+      <div class="testimonial">
+        <p>★★★★★<br>Antrenorii sunt minunați și programul e extrem de motivant!<br><strong>Ana</strong></p>
+      </div>
+    </section>
+
+    <!-- Antrenori -->
+    <section class="trainers">
+      <h3>Antrenorii disponibili</h3>
+      <div class="trainer" onclick="openTrainerProfile('andrei')">
+        <img src="andrei.jpg" alt="Antrenor Andrei">
+        <p>Andrei</p>
+      </div>
+      <div class="trainer" onclick="openTrainerProfile('ana')">
+        <img src="ana.jpg" alt="Antrenoare Ana">
+        <p>Ana</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Social media -->
+  <footer class="social">
+    <a href="#">TikTok</a>
+    <a href="#">Instagram</a>
+    <a href="#">Facebook</a>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

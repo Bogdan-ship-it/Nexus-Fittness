@@ -6,23 +6,26 @@
   <title>Nexus Fitness</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body background="assets/fundal.jpg">
   <!-- Banner sus -->
   <header class="banner">
-    <h1>NEXUS FITNESS</h1>
+    <img src="assets/banner sus.png" alt="Nexus Fitness banner"> n
   </header>
 
   <!-- Bara laterală stânga -->
   <aside class="sidebar">
-    <button id="menuBtn">Meniu</button>
-    <button id="messagesBtn">Mesaje</button>
-    <button id="profileBtn">Profilul meu</button>
-    <button id="locationBtn">Locație</button>
+ <a href="#meniu"><img src="assets/meniu.png" alt="Meniu" class="btn-meniu"></a>
+  <a href="#mesaje"><img src="assets/mesaje.png" alt="Mesaje" class="btn-mesaje"></a>
+  <a href="#profil"><img src="assets/profil.png" alt="Profilul meu" class="btn-profil"></a>
+  <a href="#locatie"><img src="assets/locatie.png.png" alt="Locație" class="btn-locatie"></a>
   </aside>
 
   <!-- Conținut principal -->
   <main class="content">
     <h2 class="club-name">NEXUS FITNESS</h2>
+
+    <section class="antrenori">
+  <h2>Antrenorii disponibili</h2>
 
     <!-- Testimoniale -->
     <section class="testimonials">
@@ -34,11 +37,10 @@
       </div>
     </section>
 
-    <!-- Antrenori -->
-    <section class="trainers">
-      <h3>Antrenorii disponibili</h3>
+
+
       <div class="trainer" onclick="openTrainerProfile('andrei')">
-        <img src="andrei.jpg" alt="Antrenor Andrei">
+        <img src="assets/antrenor_1.png" alt="Antrenor Andrei">
         <p>Andrei</p>
       </div>
       <div class="trainer" onclick="openTrainerProfile('ana')">

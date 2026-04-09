@@ -1,43 +1,102 @@
 body {
   margin: 0;
+  padding-top: 150px;
   font-family: Arial, sans-serif;
-  background-image: url("assets/fundal.jpg"); /* calea către imagine */
-  background-size: cover;       /* imaginea acoperă tot ecranul */
-  background-position: center;  /* centrată pe mijloc */
-  background-repeat: no-repeat; /* să nu se repete */
+  background-size: cover;        /* întinde imaginea pe tot ecranul */
+  background-position: center;   /* centrează imaginea */
+  background-repeat: no-repeat;  /* oprește duplicarea */
+  height: 100vh;                 /* body ocupă toată înălțimea ferestrei */
   color: #fff;
 }
-
 
 
 .banner {
-  background: linear-gradient(to right, #b30000, #000);
-  padding: 20px;
+  background-size: cover;        /* întinde imaginea pe toată lățimea containerului */
+  background-position: center;   /* centrează imaginea */
+  background-repeat: no-repeat;  /* oprește duplicarea */
+  width: 100%;                   /* ocupă toată lățimea paginii */
+  height: 150px;                 /* redu înălțimea ca să nu ocupe prea mult spațiu */
+  position: fixed;               /* îl fixează sus */
+  top: 0;                        /* poziționează la marginea de sus */
+  left: 0;
+ 
+  z-index: 1000;                 /* îl ține deasupra altor elemente */
+  display: flex;                 /* pentru alinierea textului */
+  justify-content: center;
+  align-items: center;
+  color: white;                  /* text alb peste imagine */
   text-align: center;
-  font-size: 2em;
-  font-weight: bold;
 }
+
+
 
 .sidebar {
-  position: fixed;
-  top: 80px;
+  position: fixed;        
+  top: 150px;                 
   left: 0;
-  width: 150px;
-  height: 100%;
-  background: #222;
+  width: 120px;     
+  height: calc(100vh - 150px);
+  background: linear-gradient(
+    to bottom,
+    red 0%,        
+    #333 20%,     
+    #333 80%,     
+    red 100%       
+  );
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 20px;
+  justify-content: center;    
+  align-items: center;        
 }
 
+
 .sidebar button {
-  background: #b30000;
-  color: #fff;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #b30000;  
+  color: white;
   border: none;
-  padding: 10px;
   cursor: pointer;
+  font-weight: bold;
+  width: 140px;
 }
+/* efect de evidențiere */
+.sidebar img {
+  display: block;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* efect de evidențiere pe contur */
+.sidebar img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px red); /* umbra roșie pe conturul transparent */
+}
+
+
+/* Dimensiuni individuale */
+.btn-meniu {
+  width: 50px;
+  height: auto;
+}
+
+.btn-mesaje {
+  width: 70px;
+  height: auto;
+}
+
+.btn-profil {
+  width: 60px;
+  height: auto;
+}
+
+.btn-locatie {
+  width: 50px;
+  height: auto;
+}
+
+
 
 .content {
   margin-left: 180px;
@@ -59,6 +118,16 @@ body {
   background: #333;
   padding: 15px;
   border-radius: 8px;
+}
+
+.antrenori {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.antrenori h2 {
+  color: red;              /* titlul evidențiat */
+  margin-bottom: 20px;
 }
 
 .trainers {

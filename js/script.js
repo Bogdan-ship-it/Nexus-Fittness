@@ -25,3 +25,4 @@ document.getElementById("profileBtn").addEventListener("click", () => {
 document.getElementById("locationBtn").addEventListener("click", () => {
   alert("Locația Nexus Fitness: Strada Exemplu, Chișinău.");
 });
+

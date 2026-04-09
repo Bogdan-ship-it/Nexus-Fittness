@@ -77,7 +77,7 @@ body {
 
 /* Dimensiuni individuale */
 .btn-meniu {
-  width: 50px;
+  width: 70px;
   height: auto;
 }
 
@@ -114,36 +114,63 @@ body {
   margin-top: 20px;
 }
 
-.testimonial {
-  background: #333;
-  padding: 15px;
-  border-radius: 8px;
-}
-
 .antrenori {
   text-align: center;
   margin-top: 40px;
 }
 
 .antrenori h2 {
-  color: red;              /* titlul evidențiat */
-  margin-bottom: 20px;
+  color: red;
+  margin-bottom: 30px;
 }
 
-.trainers {
-  margin-top: 30px;
+.trainer-card {
+  display: flex;                  /* layout stânga-dreapta */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;         /* chenar negru */
+  border: 2px solid red;          /* margine roșie */
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 600px;                   /* dimensiune fixă pentru card */
+  height: 220px;                  /* înălțime fixă pentru consistență */
+  color: white;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.trainer {
-  display: inline-block;
-  margin-right: 20px;
-  text-align: center;
-  cursor: pointer;
+.trainer-card:hover {
+  box-shadow: 0 0 20px red;       /* umbră roșie doar la hover */
+  transform: scale(1.02);
 }
 
-.trainer img {
-  width: 100px;
-  border-radius: 50%;
+.trainer-info {
+  flex: 1;                        /* ocupă partea stângă */
+  text-align: left;
+  padding-right: 20px;
+}
+
+.trainer-info h3 {
+  margin: 0 0 10px;
+  color: #ff3333;
+}
+
+.trainer-info p {
+  margin: 5px 0;
+}
+
+
+.img-andrei {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.img-ana {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .social {
